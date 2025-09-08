@@ -1,0 +1,91 @@
+/* Mostrador de cálculos */
+ #contenedor-calculadora {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+ }
+
+ #display{
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+ }
+
+/* Cuerpo de la calculadora */
+#cuerpo-calculadora {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% auto;
+    gap: 20px;
+    
+}
+
+/* Teclado */
+
+#teclado {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    
+}
+
+.teclas-numericas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+}
+
+
+.funciones-basicas {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 20%;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    gap: 10px;
+}
+
+.tecla{
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Contenedor de operaciones realizadas */
+#contenedor-operaciones {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 90%;
+    width: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
