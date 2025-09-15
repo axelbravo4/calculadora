@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="scripts.js" defer></script>
+    <script src="scripts.js" ></script>
+    <script src="localStorage.js"></script>
 </head>
 <body>
     <div id="contenedor-calculadora">
-        <input type="text" id="display" disabled>
+        <div id="display"></div>
     </div>
-
+    <div id="botones-manejo-calculadora">
+        <button class="tecla-de-movimiento" id="mover-izquierda"><</button>
+        <button class="tecla-de-movimiento" id="mover-derecha">></button>
+    </div>
+    <button id="borrar-historial">Borrar Historial</button>
     <div id="cuerpo-calculadora">
         <div id="contenedor-operaciones"></div>
 
@@ -30,13 +35,14 @@
                 
             </div>
             <div class="funciones-basicas">
+                <button id="enter" class="tecla" data-key="=">=</button>
                 <button class="tecla" data-key="+">+</button>
                 <button class="tecla" data-key="-">-</button>
-                <button class="tecla" data-key="=">=</button>
                 <button class="tecla" data-key="/">/</button>
                 <button class="tecla" data-key="X">X</button>
                 <button class="tecla" data-key=",">,</button>
-                <button class="tecla" data-key="C">C</button>
+                <button id="poner-en-cero" class="tecla" data-key="C">C</button>
+                <button id="borrar-un-valor" class="tecla" data-key="Backspace">←</button>
             </div>
             
     </div>
